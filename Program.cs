@@ -13,9 +13,15 @@ class Program
         for(int i = 1; i <= 100; i++)
         {
             FizzBuzz = "";
+            //if i divisible by 3, FizzBuzz = Fizz, else nothing
             FizzBuzz = i % 3 == 0 ? "Fizz" : "";
+            /*if i divisible by 5, FizzBuzz += Fizz, else nothing
+             += -> to include FizzBuzz = FizzBuzz*/
             FizzBuzz += i % 5 == 0 ? "Buzz" : "";
+            //if FizzBuzz is empty, add i to Result, if not add FizzBuzz
             Result += FizzBuzz == "" ? i : FizzBuzz;
+            /*BONUS
+             every 10 numbers, new line*/
             Result += i % 10 == 0 ? "|\n" : "|";
         }
         Console.WriteLine(Result);
