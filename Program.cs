@@ -8,5 +8,19 @@ class Program
         // Tous les nombres divisibles par 3 seront remplacés par le mot “Fizz”.
         // Tous les nombres divisibles par 5 seront remplacés par le mot “Buzz”.
         // Tous les nombres qui sont divisibles à la fois par 3 et à la fois par 5 seront remplacés par le mot “FizzBuzz”.
+        
+        for(int i = 1; i <= 100; i++)
+        {
+            String FizzBuzz = "";
+            if (i % 3 == 0)
+            {
+                FizzBuzz = "Fizz";
+            }
+            if(i % 5 == 0)
+            {
+                FizzBuzz += "Buzz";
+            }
+            Console.WriteLine(FizzBuzz == "" ? i : FizzBuzz);
+        }
     }
 }
